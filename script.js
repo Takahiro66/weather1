@@ -3,6 +3,8 @@ const app=new Vue({
     data: {
       selected: '',
       users: [],
+      url1: [],
+      text:[],
       options: [
         { text: '北海道', value: '016000'},
         {text: '青森', value: '020000'}, 
@@ -64,9 +66,19 @@ const app=new Vue({
             this.users = data;
         
           });
+          const url1=document.querySelector('#currentLocate').value;
+          this.url1='https://www.jma.go.jp/bosai/forecast/#area_type=offices&area_code='+url1;
+         
+          // ここができてない
+          const text=document.querySelector('#currentLocate').text;
+          this.text=text;
+          // ここができてない
+
+          let link = document.getElementById('link');
+          //href属性の値を書き換える
+          link.setAttribute('href', this.url1);
+          
       }, 
     },
   
   })
-  
-  
