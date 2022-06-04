@@ -8,7 +8,7 @@ const app=new Vue({
       options: [
         { text: '北海道', value: '016000'},
         {text: '青森', value: '020000'}, 
-        {text: '森岡', value: '030000'}, 
+        {text: '盛岡', value: '030000'}, 
         {text: '仙台', value: '040000'}, 
         {text: '秋田', value: '050000'}, 
         {text: '山形', value: '060000'}, 
